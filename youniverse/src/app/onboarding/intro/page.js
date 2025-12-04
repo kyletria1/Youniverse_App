@@ -1,6 +1,7 @@
 "use client";
 import {useEffect} from "react";
 import {useRouter} from "next/navigation";
+import Image from 'next/image';
 import styles from "./page.module.css";
 
 export default function Intro() {
@@ -16,7 +17,7 @@ export default function Intro() {
 
   return (
     <main>
-      <image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className="screen__image--company"></image>
+      <Image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className="screen__image--company"></Image>
     </main>
   );
 }
