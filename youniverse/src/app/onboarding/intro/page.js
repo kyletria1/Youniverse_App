@@ -6,14 +6,17 @@ import styles from "./page.module.css";
 
 export default function Intro() {
   const router = useRouter();
+  //gives access to the router object
 
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/onboarding/welcome_screen"); 
-    }, 3000);
+    }, 5000);
+    //schedules function to route to the welcome screen after a 5 second delay
 
     return () => clearTimeout(timer);
   }, [router]);
+  //function to prevent errors if component unmounts (gets removed from DOM tree) before 5 seconds are up
 
   return (
     <main className={`${styles.intro} ${styles['intro--fullscreen']}`}>
