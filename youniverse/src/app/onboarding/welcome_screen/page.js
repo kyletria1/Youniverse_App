@@ -1,5 +1,6 @@
-'use client';
-import { useRouter } from 'next/navigation';
+"use client";
+import { useRouter } from "next/navigation";
+import Button from "button.js";
 
 export default function WelcomeScreen() {
   const router = useRouter();
@@ -7,6 +8,8 @@ export default function WelcomeScreen() {
   return (
     <div>
         <image src="youniverse\public\background_images\WelcomeScreenBackground.svg"></image>
+        <Button/>
+        <Button/>
     </div>
   );
 }
