@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  width: 13rem;       
+  height: 3rem;        
+  padding: 1rem 4rem;  
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;         
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.button--interface .text {
+  color: #0831B4;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;   
+  line-height: 2rem;  
+}
+
+.button--welcome .text {
+  color:#0831B4;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1rem;    
+  font-style: normal;
+  font-weight: 500;   
+  line-height: 2rem;  
+}
