@@ -20,8 +20,13 @@ export default function Intro() {
 
   return (
     <main className={`${styles.intro} ${styles['intro--fullscreen']}`}>
-      <Image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className={`${styles.intro__image} ${styles['intro__image--cover']}`}
-></Image>
+      <Image 
+      src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" 
+      alt="StarUpSpace Company Wordmark" 
+      width={393}
+      height={852}
+      className={`${styles.intro__image} ${styles['intro__image--cover']}`}>
+      </Image>
     </main>
   );
 }
