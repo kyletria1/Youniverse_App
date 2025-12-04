@@ -15,7 +15,7 @@ export default function Intro() {
   }, [router]);
 
   return (
-    <div className={styles.container}>
+    <div className="screen__image--company">
       <image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg"></image>
     </div>
   );
