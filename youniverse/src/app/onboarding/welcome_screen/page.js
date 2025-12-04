@@ -6,7 +6,7 @@ import Button from "button.js";
 
 export default function Welcome() {
   const router = useRouter();
-  //welcome page is mounted and router is grabbed again and now points to /onboarding/welcome_screen
+  //[from code tutor] welcome page is mounted and router is grabbed again and now points to /onboarding/welcome_screen
 
   return (
     <main className={`${styles.welcome} ${styles['welcome--fullscreen']}`}>
