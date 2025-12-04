@@ -1,7 +1,7 @@
 "use client";
 import {useEffect} from "react";
 import {useRouter} from "next/navigation";
-import Image from 'next/image';
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Intro() {
@@ -16,8 +16,9 @@ export default function Intro() {
   }, [router]);
 
   return (
-    <main className="splash splash--fullscreen">
-      <Image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className="splash__image splash__image--cover"></Image>
+    <main className={`${styles.intro} ${styles['intro--fullscreen']}`}>
+      <Image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className={`${styles.intro__image} ${styles['intro__image--cover']}`}
+></Image>
     </main>
   );
 }

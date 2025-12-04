@@ -1,17 +1,17 @@
-.splash{
+.intro{
     width: 393px;
     height: 852px;
     position: relative;
 }
 
-.splash--fullscreen{
+.intro--fullscreen{
     height: 100vh;
 }
 
-.splash__image{
+.intro__image{
     z-index: 1;
 }
 
-.splash__image--cover{
+.intro__image--cover{
     object-fit: cover;
 }
