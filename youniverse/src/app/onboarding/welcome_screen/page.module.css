@@ -1,0 +1,17 @@
+.welcome{
+    width: 393px;
+    height: 852px;
+    position: relative;
+}
+
+.welcome--fullscreen{
+    height: 100vh;
+}
+
+.welcome__image{
+    z-index: 1;
+}
+
+.welcome__image--cover{
+    object-fit: cover;
+}
