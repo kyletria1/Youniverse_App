@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 103.19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1863ff;
+      }
+
+      .cls-2 {
+        fill: #e8efff;
+      }
+
+      .cls-3 {
+        fill: #96baff;
+      }
+
+      .cls-4 {
+        fill: #b7cfff;
+      }
+    </style>
+  </defs>
+  <g id="Giant_Stack_of_Books" data-name="Giant Stack of Books">
+    <g>
+      <rect class="cls-2" x="5" y="5" width="11.14" height="27.73"/>
+      <rect class="cls-2" x="141.72" y="5" width="11.14" height="27.73"/>
+      <rect class="cls-2" x="21.14" y="5" width="115.59" height="27.73"/>
+      <rect class="cls-4" x="157.86" y="37.73" width="11.14" height="27.73"/>
+      <rect class="cls-4" x="21.14" y="37.73" width="11.14" height="27.73"/>
+      <path class="cls-1" d="M170.64,32.73h-12.78V3.35c0-1.85-1.5-3.35-3.35-3.35H3.35C1.5,0,0,1.5,0,3.35v31.02c0,1.85,1.5,3.35,3.35,3.35h12.78v27.73H3.35c-1.85,0-3.35,1.5-3.35,3.35v31.02c0,1.85,1.5,3.35,3.35,3.35h151.15c1.85,0,3.35-1.5,3.35-3.35v-29.38h12.78c1.85,0,3.35-1.5,3.35-3.35v-31.02c0-1.85-1.5-3.35-3.35-3.35ZM152.86,5v27.73h-11.14V5h11.14ZM37.27,65.46v-27.73h115.59v27.73H37.27ZM21.14,37.73h11.14v27.73h-11.14v-27.73ZM141.72,70.46h11.14v27.73h-11.14v-27.73ZM136.72,5v27.73H21.14V5h115.59ZM5,5h11.14v27.73H5V5ZM5,70.46h11.14v27.73H5v-27.73ZM21.14,70.46h115.59v27.73H21.14v-27.73ZM169,65.46h-11.14v-27.73h11.14v27.73Z"/>
+      <rect class="cls-4" x="37.27" y="37.73" width="115.59" height="27.73"/>
+      <rect class="cls-3" x="141.72" y="70.46" width="11.14" height="27.73"/>
+      <rect class="cls-3" x="5" y="70.46" width="11.14" height="27.73"/>
+      <rect class="cls-3" x="21.14" y="70.46" width="115.59" height="27.73"/>
+    </g>
+  </g>
+</svg>

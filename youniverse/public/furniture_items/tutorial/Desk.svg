@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.61 106.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7cbfff;
+      }
+
+      .cls-2 {
+        fill: #c3e2ff;
+      }
+
+      .cls-3 {
+        fill: #d6ebff;
+      }
+    </style>
+  </defs>
+  <g id="Desk">
+    <g>
+      <rect class="cls-3" x="149.85" y="25.18" width="11.76" height="74.06"/>
+      <rect class="cls-2" x="5" y="5" width="156.61" height="15.18"/>
+      <path class="cls-1" d="M163.19,0H3.42C1.53,0,0,1.53,0,3.42v18.34c0,.29.05.56.11.83-.07.26-.11.52-.11.8v79.59c0,1.77,1.44,3.22,3.22,3.22h15.32c1.77,0,3.22-1.44,3.22-3.22V25.18h123.1v75.85c0,1.77,1.44,3.22,3.22,3.22h15.32c1.77,0,3.22-1.44,3.22-3.22V3.42c0-1.88-1.53-3.42-3.42-3.42ZM149.85,25.18h11.76v74.06h-11.76V25.18ZM16.76,101.2H5V25.18h11.76v76.02ZM5,20.18V5h156.61v15.18H5Z"/>
+      <rect class="cls-3" x="5" y="25.18" width="11.76" height="76.02"/>
+    </g>
+  </g>
+</svg>
