@@ -6,7 +6,7 @@ export default function WelcomeScreen() {
 
   return (
     <div>
-        <p>testing</p>
+        <image src="youniverse\public\background_images\WelcomeScreenBackground.svg"></image>
     </div>
   );
 }
