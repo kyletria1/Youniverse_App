@@ -16,7 +16,7 @@ export default function Intro() {
 
   return (
     <div className={styles.container}>
-      <image src="youniverse\public\background_images\StarUpSpace Intro Background.svg"></image>
+      <image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg"></image>
     </div>
   );
 }
