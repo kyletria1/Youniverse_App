@@ -6,7 +6,7 @@ export default function WelcomeScreen() {
   const router = useRouter();
 
   return (
-    <div>
+    <div className="screen__image--welcome">
         <image src="youniverse\public\background_images\WelcomeScreenBackground.svg"></image>
         <Button/>
         <Button/>
