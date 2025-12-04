@@ -15,8 +15,8 @@ export default function Intro() {
   }, [router]);
 
   return (
-    <div>
-      <image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" className="screen__image--company"></image>
-    </div>
+    <main>
+      <image src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" alt="StarUpSpace Company Wordmark" className="screen__image--company"></image>
+    </main>
   );
 }
