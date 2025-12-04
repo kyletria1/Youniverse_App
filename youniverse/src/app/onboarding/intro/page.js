@@ -25,6 +25,7 @@ export default function Intro() {
       alt="StarUpSpace Company Wordmark" 
       width={393}
       height={852}
+      priority
       className={`${styles.intro__image} ${styles['intro__image--cover']}`}>
       </Image>
     </main>

@@ -15,6 +15,7 @@ export default function Welcome() {
         alt="Youniverse Welcome Screen Background Image" 
         width={393}
         height={852}
+        priority
         className={`${styles.welcome__image} ${styles['welcome__image--cover']}`}>
         </Image>
         <Button variant="welcome">Sign Up</Button>
