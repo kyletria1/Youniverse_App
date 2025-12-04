@@ -1,6 +1,17 @@
-/* BACKGROUND IMAGE SIZE */
-.screen__image--company{
+.splash{
     width: 393px;
     height: 852px;
+    position: relative;
+}
+
+.splash--fullscreen{
+    height: 100vh;
+}
+
+.splash__image{
+    z-index: 1;
+}
+
+.splash__image--cover{
     object-fit: cover;
 }
