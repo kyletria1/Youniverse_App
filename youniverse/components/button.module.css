@@ -8,14 +8,15 @@
   align-content: center;
   gap: 1rem;         
   flex-wrap: wrap;
-  border: none;
   border-radius: 1.5rem;
   cursor: pointer;
+  border: 5px solid #0831B4;
+  background-color: white;
 }
 
 .button--interface .text {
   color: #0831B4;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;   
