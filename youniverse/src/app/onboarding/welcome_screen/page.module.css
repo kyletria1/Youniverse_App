@@ -1,3 +1,4 @@
+/* WELCOME IMAGE */
 .welcome{
     position: relative;
 }
@@ -12,4 +13,18 @@
 
 .welcome__image--cover{
     object-fit: cover;
+}
+
+/* AUTHENTICATION BUTTONS */
+.auth__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.auth__buttons--stacked {
+  flex-direction: column;
+  gap: 0.75rem;
 }
