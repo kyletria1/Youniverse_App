@@ -21,7 +21,7 @@ export default function Intro() {
   return (
     <main className={`${styles.intro} ${styles['intro--fullscreen']}`}>
       <Image 
-      src="youniverse\public\background_images\StarUpSpaceIntroBackground.svg" 
+      src="/background_images/StarUpSpaceIntroBackground.svg" 
       alt="StarUpSpace Company Wordmark" 
       width={393}
       height={852}
