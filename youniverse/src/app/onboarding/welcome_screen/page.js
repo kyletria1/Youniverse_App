@@ -3,7 +3,7 @@ import {useRouter} from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css"
 import Button from "../../../../components/Button.js";
-import SquareButton from "../../../../components/SquareButton.js";
+import SignUpModal from "../../../../components/SignUpModal";
 
 export default function Welcome() {
   const router = useRouter();
@@ -25,6 +25,7 @@ export default function Welcome() {
           <Button variant="welcome">Log In</Button>
         </div>
       </div>
+      <SignUpModal/>
     </main>
   );
 }
