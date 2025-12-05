@@ -2,7 +2,7 @@
 import {useRouter} from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css"
-import Button from "../../../../components/Button";
+import Button from "../../../../components/Button.js";
 
 export default function Welcome() {
   const router = useRouter();
