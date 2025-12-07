@@ -1,19 +1,4 @@
-.intro{
-    position: relative;
-    width: 393px; 
-    height: 852px; 
-    margin: 0 auto; 
-    overflow: hidden;
-}
-
-.intro--fullscreen{
-    height: 100vh;
-}
-
 .intro__image{
     z-index: 1;
-}
-
-.intro__image--cover{
     object-fit: cover;
 }

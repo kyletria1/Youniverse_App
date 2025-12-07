@@ -27,7 +27,7 @@ const pixelify = Pixelify_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${fredoka.variable} ${pixelify.variable}`}>
+      <body className={`${poppins.variable} ${fredoka.variable} ${pixelify.variable} screen screen--fullscreen`}>
         {children}
       </body>
     </html>

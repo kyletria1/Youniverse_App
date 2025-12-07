@@ -12,8 +12,8 @@ export default function Welcome() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <main className={styles.welcome}>
-      <div className={styles['welcome__frame']}>
+    <main>
+      <div className={styles.welcome}>
         <Image
           src="/background_images/WelcomeScreenBackground.svg"
           alt="Welcome Background"
@@ -34,4 +34,4 @@ export default function Welcome() {
       </div>
     </main>
   );
-}
+} 
