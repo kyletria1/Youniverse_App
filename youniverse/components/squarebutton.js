@@ -24,11 +24,3 @@ export default function SquareButton({
     </button>
   );
 }
-
-// HOW TO USE
-{/* 
-    <SquareButton variant="active" 
-    iconSrc="/icons/button_icons/DecorateIcon.svg" 
-    alt="decorate icon">
-    </SquareButton>
- */}

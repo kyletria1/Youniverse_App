@@ -2,7 +2,7 @@ import styles from "./SignUpModal.module.css"
 import Button from "./Button.js";
 import SquareButton from "./SquareButton.js";
 
-export default function SignUpModal() {
+export default function SignUpModal({onClose}) {
     return (
         <div className={styles.modal}>
         <div className={styles.modal__header}>
@@ -12,8 +12,9 @@ export default function SignUpModal() {
                     variant="active"
                     iconSrc="/icons/button_icons/ExitIcon.svg"
                     alt="Exit"
+                    onClick={onClose}
                     />
-             </div>
+                </div>
         </div>
 
         <form className={styles.modal__form}>
