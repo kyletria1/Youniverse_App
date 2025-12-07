@@ -18,22 +18,22 @@ export default function SignUpModal() {
 
         <form className={styles.modal__form}>
             <label className={styles.modal__label}>First Name</label>
-            <input className={styles.modal__input} name="firstName" />
+            <input className={styles.modal__input} name="firstName" type="text" required/>
 
             <label className={styles.modal__label}>Last Name</label>
-            <input className={styles.modal__input} name="lastName" />
+            <input className={styles.modal__input} name="lastName" type="text" required/>
 
             <label className={styles.modal__label}>Age</label>
-            <input className={styles.modal__input} name="age" type="number"/>
+            <input className={styles.modal__input} name="age" type="number" required/>
 
             <label className={styles.modal__label}>Email</label>
-            <input className={styles.modal__input} name="email" type="email"/>
+            <input className={styles.modal__input} name="email" type="email" required/>
 
             <label className={styles.modal__label}>Password</label>
-            <input className={styles.modal__input} name="password" type="password" />
+            <input className={styles.modal__input} name="password" type="password" required/>
 
             <label className={styles.modal__label}>Confirm Password</label>
-            <input className={styles.modal__input} name="confirmPassword" type="password" />
+            <input className={styles.modal__input} name="confirmPassword" type="password" required/>
         </form>
 
         <div className={styles.modal__footer}>
