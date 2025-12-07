@@ -1,37 +1,55 @@
 /* WELCOME IMAGE */
 .welcome{
     position: relative;
-}
+    width: 393px;
+    height: 852px;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
 
 .welcome__frame {
-  position: relative;
-  width: 393px;
-  height: 852px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+    position: relative;
+    width: 393px;
+    height: 852px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
-.welcome__image{
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .welcome__image{
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 
-}
+  }
 
-/* AUTHENTICATION BUTTONS */
-.authentication__buttons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  /* AUTHENTICATION BUTTONS */
+  .authentication__buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 33rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .authentication__buttons--stacked {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+/* SIGN UP MODAL */
+  .modal__overlay {
   position: absolute;
-  z-index: 2;
-  bottom: 33rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.authentication__buttons--stacked {
-  flex-direction: column;
-  gap: 0.75rem;
-}
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  }
