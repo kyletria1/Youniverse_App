@@ -16,7 +16,7 @@ export default function Welcome() {
       <div className={styles.welcome}>
         <Image
           src="/background_images/WelcomeScreenBackground.svg"
-          alt="Welcome Background"
+          alt="Welcome Screen Background"
           width={393}
           height={852}
           priority

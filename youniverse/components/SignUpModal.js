@@ -11,7 +11,7 @@ export default function SignUpModal({onClose}) {
                     <SquareButton
                     variant="active"
                     iconSrc="/icons/button_icons/ExitIcon.svg"
-                    alt="Exit"
+                    alt="Exit Button"
                     onClick={onClose}
                     />
                 </div>

@@ -22,7 +22,7 @@ export default function Intro() {
     <main>
       <Image 
       src="/background_images/StarUpSpaceIntroBackground.svg" 
-      alt="StarUpSpace Company Wordmark" 
+      alt="StarUpSpace Company Wordmark Introduction Screen" 
       width={393}
       height={852}
       priority
