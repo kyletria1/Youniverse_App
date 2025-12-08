@@ -28,4 +28,4 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #0831b4 !important;
 }
-/* [from code tutor] to change the browser defaults of the autofill to match styling*/
+/* [from code tutor (lines 25 to 30)]: edit webkit-autofill to change the browser defaults of the autofill to match styling*/
