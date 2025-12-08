@@ -4,8 +4,9 @@ export default function Button({
     variant = "interface", 
     children,              
     ...props
+}) 
 
-}) {
+  {
     return (
       <button
         className={`${styles.button} ${styles[`button--${variant}`]}`}

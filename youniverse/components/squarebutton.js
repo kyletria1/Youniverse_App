@@ -6,7 +6,9 @@ export default function SquareButton({
     iconSrc,
     alt = "",
     ...props
-}) {
+}) 
+
+{
   return (
     <button
       className={`${styles.button} ${styles[`button--${variant}`]}`}
