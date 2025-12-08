@@ -3,7 +3,7 @@ import { Poppins, Fredoka, Pixelify_Sans } from "next/font/google";
 
 export const metadata = {
   title: "Youniverse",
-  description: "A productivity based virtual pet app designed for working towards dreams and or long term beneficial goals",
+  description: "Youniverse is a productivity based virtual pet app designed for working towards dreams and or long term beneficial goals",
 };
 
 const poppins = Poppins({
@@ -27,8 +27,10 @@ const pixelify = Pixelify_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${fredoka.variable} ${pixelify.variable} screen screen--fullscreen`}>
-        {children}
+      <body className={`${poppins.variable} ${fredoka.variable} ${pixelify.variable}`}>
+        <main className="screen screen--fullscreen">
+          {children}
+        </main>
       </body>
     </html>
   );
