@@ -11,21 +11,23 @@ export default function SignUpModal({onClose, onSuccess}) {
         const form = e.target;
         const firstName = form.firstName.value.trim();
         const lastName = form.lastName.value.trim();
-        const age = form.age.value;
+        const ageValue = form.age.value.trim();
         const email = form.email.value.trim();
         const password = form.password.value;
         const confirmPassword = form.confirmPassword.value;
         //[AI generated code (lines 12,13,15)]: .trim() gets rid of whitespace from the start and end of a string.
 
-        if (!firstName || !lastName || !age || !email || !password || !confirmPassword) {
+        if (!firstName || !lastName || !ageValue || !email || !password || !confirmPassword) {
             setError("Please fill out all fields.");
             return;
         }
 
-        if (age.value <= 0) {
-            setError("Please enter a valid age.")
-            return;
+        const age = Number(ageValue);
+        if (!age || age < 12 || age > 120) {
+        setError("Please enter a valid age.");
+        return;
         }
+
 
         const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
         if (!emailRegex.test(email)) {
