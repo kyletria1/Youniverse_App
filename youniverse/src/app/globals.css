@@ -2,17 +2,17 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-y: auto; 
+  overflow: hidden; 
   background-color: #D6EBFF;
 }
 
 .screen {
   position: relative;
   width: 393px;
-  min-height: 100vh; 
+  height: 100vh;
   margin: 0 auto; 
   overflow-x: hidden; 
-  overflow-y: visible; 
+  overflow-y: auto; 
 }
 
 .screen--fullscreen {

@@ -1,41 +1,34 @@
-.welcome {
-    position: relative;
-    width: 393px;
-    height: 852px;
-    margin: 0 auto;
+.welcome__image{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
-  .welcome__image{
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-
-  .authentication__buttons {
+.authentication__buttons {
     display: flex;
     gap: 1rem;
     align-items: center;
     position: absolute;
     z-index: 2;
-    bottom: 33rem;
+    bottom: 24rem;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .authentication__buttons--stacked {
+.authentication__buttons--stacked {
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  .modal__overlay {
+.modal__overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: 100%;
+  height: 117%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
+  overflow: hidden;
   }

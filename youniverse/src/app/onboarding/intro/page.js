@@ -19,7 +19,7 @@ export default function Intro() {
   //[from code tutor (lines 17 and 18)]: function to prevent errors if component unmounts (gets removed from DOM tree) before 5 seconds are up
 
   return (
-    <main>
+    <section className="screen">
       <Image 
       src="/background_images/StarUpSpaceIntroBackground.svg" 
       alt="StarUpSpace Company Wordmark Introduction Screen" 
@@ -28,6 +28,6 @@ export default function Intro() {
       priority
       className={`${styles.intro__image}`}>
       </Image>
-    </main>
+    </section>
   );
 }

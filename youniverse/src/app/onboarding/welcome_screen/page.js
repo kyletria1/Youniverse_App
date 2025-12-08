@@ -13,8 +13,7 @@ export default function Welcome() {
   const [modal, setModal] = useState(null);
 
   return (
-    <main>
-      <section className={styles.welcome}>
+      <section className="screen">
         <Image
           src="/background_images/WelcomeScreenBackground.svg"
           alt="Welcome Screen Background"
@@ -28,20 +27,21 @@ export default function Welcome() {
           <Button variant="welcome">Log In</Button>
         </div>
         {modal === "signup" && (
-          <div className={styles.modal__overlay}>
-            <SignUpModal
+          <section className={styles.modal__overlay}>
+            <div>
+              <SignUpModal
               onClose={() => setModal(null)}
               onSuccess={() => setModal("confirmation")}
-            />
-          </div>
+              />
+            </div>
+          </section>
         )}
 
         {modal === "confirmation" && (
-          <div className={styles.modal__overlay}>
+          <section className={styles.modal__overlay}>
             <ConfirmationModal onClose={() => setModal(null)} />
-          </div>
+          </section>
         )}
       </section>
-    </main>
   );
 } 
