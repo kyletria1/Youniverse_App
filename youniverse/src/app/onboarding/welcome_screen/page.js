@@ -9,7 +9,7 @@ import ConfirmationModal from "../../../../components/ConfirmationModal";
 
 export default function Welcome() {
   const router = useRouter();
-  //[from code tutor(line 11)] welcome page is mounted and router is grabbed again and now points to /onboarding/welcome_screen
+  //[from code tutor (line 11)] welcome page is mounted and router is grabbed again and now points to /onboarding/welcome_screen
   const [modal, setModal] = useState(null);
 
   return (
