@@ -50,7 +50,7 @@
     padding: 0.5rem 1rem;
     border: 5px solid #0831B4;
     border-radius: 0.5rem;
-    background: white;
+    background: #F2F9FF;
     font-size: 1rem;
     color: #0831B4;
     font-family: "Poppins";
@@ -58,8 +58,19 @@
     }
 
 .modal__footer{
-    margin-top: 1.5rem; 
+    margin: 0 0.5rem; 
     display: flex;
     align-items: center;
-    padding-left: 2.3rem;
+    padding-left: 2rem;
     }
+
+.modal__input:focus {
+    outline: none;
+    border: 5px solid #0831B4;
+}
+/* [from code tutor] to remove broswer default border selection styling from input text box */
+
+.modal__input:hover {
+    border: 5px solid #0831B4; 
+}
+/* [from code tutor] to remove broswer default border selection styling from input text box */

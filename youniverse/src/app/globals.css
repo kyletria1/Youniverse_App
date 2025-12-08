@@ -21,3 +21,11 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #0831b4 !important;
+}
+/* [from code tutor] to change the browser defaults of the autofill to match styling*/
