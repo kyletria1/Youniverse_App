@@ -15,32 +15,38 @@ export default function SignUpModal({onClose, onSuccess}) {
         const email = form.email.value.trim();
         const password = form.password.value;
         const confirmPassword = form.confirmPassword.value;
-        //[AI generated code (lines 12,13,15): .trim() gets rid of whitespace from the start and end of a string]
+        //[AI generated code (lines 12,13,15)]: .trim() gets rid of whitespace from the start and end of a string.
 
         if (!firstName || !lastName || !age || !email || !password || !confirmPassword) {
-        setError("Please fill out all fields.");
-        return;
+            setError("Please fill out all fields.");
+            return;
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (age.value <= 0) {
+            setError("Please enter a valid age.")
+            return;
+        }
+
+        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
         if (!emailRegex.test(email)) {
             setError("Please enter a valid email.");
             return;
         }
-        //[AI generated code (line 25)]: The email must look like: some text, then an @, then more text, then a dot, then more text with no spaces and only one @ (Example: user@youniverse.ca).
+        //[AI generated code (lines 25 to 29)]: An email regex is a regualr expression pattern that is used to check if an email looks valid. The email requires some letters, numbers, or symbols before the @, then a domain name after the @, followed by a dot and at least two letters for the domain ending (like .ca). An example of a valid email would be user@youniverse.ca.
 
         if (password.length < 6) {
-        setError("Password must be at least 6 characters.");
-        return;
+            setError("Password must be at least 6 characters.");
+            return;
         }
 
         if (password !== confirmPassword) {
-        setError("Passwords do not match.");
-        return;
+            setError("Passwords do not match.");
+            return;
         }
 
         setError("");
         onSuccess();
+        //[AI Generated Code (Lines 47 and 48)]: Clear any errors if all entered form values are valid and then do what ever is programmed to happen upon a successful completion (change sign up modal to confirmation modal).
   };
 
     return (
