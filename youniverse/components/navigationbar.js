@@ -2,7 +2,7 @@ import styles from "./NavigationBar.module.css";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 
-export default function NavigationBar({ variant = "PlanetSelected" }) {
+export default function NavigationBar({variant = "PlanetSelected"}) {
   const router = useRouter();
 
   const iconMap = {
@@ -49,7 +49,6 @@ export default function NavigationBar({ variant = "PlanetSelected" }) {
     <nav className={styles.navigation}>
       {tabs.map((tab) => {
         const iconSrc = `/icons/navigation_icons/${iconMap[variant][tab]}`;
-        const iconClass = styles[`navigation__icon--${tab.toLowerCase()}`];
         const buttonClass = styles.navigation__button;
         const isSelected = variant.toLowerCase().includes(tab.toLowerCase());
         // [AI Generated Code(Lines 50 to 54)]: First, loop through each tab and render a button. Pick the correct icon file based on the current variant and tab name. Then uild a CSS class for the icon based on the tab name. Finally, Check if this tab is the selected one by seeing if the variant string includes the tab name.
@@ -65,7 +64,7 @@ export default function NavigationBar({ variant = "PlanetSelected" }) {
                 width={50}
                 height={50}
                 priority
-                className={iconClass}/>
+                className={styles.navigation__icon}/>
               <span
                 className={`${styles.navigation__text} ${
                   isSelected ? styles["navigation__text--selected"] : ""}`}>
