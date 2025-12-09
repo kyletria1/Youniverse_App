@@ -10,39 +10,39 @@ export default function NavigationBar({ variant = "PlanetSelected" }) {
       Planet: "PlanetIconSelected.svg",
       Dream: "DreamIconDefault.svg",
       Learn: "LearnIconDefault.svg",
-      Settings: "SettingsIconDefault.svg",
+      Project: "ProjectIconDefault.svg",
     },
 
     DreamSelected: {
       Planet: "PlanetIconDefault.svg",
       Dream: "DreamIconSelected.svg",
       Learn: "LearnIconDefault.svg",
-      Settings: "SettingsIconDefault.svg",
+      Project: "ProjectIconDefault.svg",
     },
 
     LearnSelected: {
       Planet: "PlanetIconDefault.svg",
       Dream: "DreamIconDefault.svg",
       Learn: "LearnIconSelected.svg",
-      Settings: "SettingsIconDefault.svg",
+      Project: "ProjectIconDefault.svg",
     },
 
     Settings: {
       Planet: "PlanetIconDefault.svg",
       Dream: "DreamIconDefault.svg",
       Learn: "LearnIconDefault.svg",
-      Settings: "SettingsIconSelected.svg",
+      Project: "ProjectIconSelected.svg",
     },
   };
   // [AI Generated Code(Lines 5 to 33)]: iconMap defines which icon file to use depending on the active variant. Each variant corresponds to one tab being "selected" while the others remain "default".
   
-  const tabs = ["Planet", "Dream", "Learn", "Settings"];
+  const tabs = ["Planet", "Dream", "Learn", "Project"];
 
     const routes = {
     Planet: "/planet",
     Dream: "/dream",
     Learn: "/learn",
-    Settings: "/settings",
+    Project: "/project",
   };
 
   return (
