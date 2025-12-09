@@ -3,9 +3,9 @@
     object-fit: cover;
 }
 
-.lumenWrapper {
+.lumen {
   position: absolute;
-  top: 50%;             /* adjust to match mockup */
+  top: 50%;
   left: 0;
   width: 100%;
   display: flex;
@@ -13,16 +13,14 @@
   z-index: 1;
 }
 
-/* Position Decorate button below Lumen */
 .decorateButton {
   position: absolute;
-  bottom: -1rem;             /* adjust to sit under Lumen */
+  bottom: -1rem;
   right: 1rem;
   transform: translateX(-50%);
   z-index: 2;
 }
 
-/* Anchor NavigationBar to bottom */
 .navigationBar {
   position: absolute;
   bottom: -10rem;

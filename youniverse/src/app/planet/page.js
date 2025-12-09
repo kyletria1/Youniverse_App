@@ -16,7 +16,7 @@ export default function Planet() {
             priority
             className={styles.intro__image}
         />
-        <div className={styles.lumenWrapper}>
+        <div className={styles.lumen}>
             <Lumen />
         </div>
         <div className={styles.decorateButton}>
