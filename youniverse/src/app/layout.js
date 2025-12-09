@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Poppins, Fredoka, Pixelify_Sans } from "next/font/google";
+import {Poppins, Fredoka, Pixelify_Sans} from "next/font/google";
 
 export const metadata = {
   title: "Youniverse",

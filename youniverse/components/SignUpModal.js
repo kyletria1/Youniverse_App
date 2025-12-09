@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import styles from "./SignUpModal.module.css"
 import Button from "./Button.js";
 import SquareButton from "./SquareButton.js";

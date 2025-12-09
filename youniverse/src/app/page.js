@@ -4,8 +4,4 @@ import {redirect} from "next/navigation";
 export default function Home() {
   redirect("/onboarding/intro");
   //[from code tutor (line 6)]: instead of rendering this page the function send the user to the route of the intro page
-  return (
-    <div>
-    </div>
-  );
 }
