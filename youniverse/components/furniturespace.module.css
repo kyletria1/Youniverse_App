@@ -1,0 +1,11 @@
+.furniturespace {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.furniturespace__image{
+    z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+}
