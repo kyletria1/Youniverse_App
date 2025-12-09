@@ -15,14 +15,14 @@ export default function SignUpModal({onClose, onSuccess}) {
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
     //[AI generated code(line 21)]: this code updates the formData object with prev being the old state and ...prev copies all the other existing fields and [name]:value replaces the field with that was changed with the new value.
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { firstName, lastName, age, email, password, confirmPassword } = formData;
+        const {firstName, lastName, age, email, password, confirmPassword} = formData;
 
         if (!firstName.trim() || !lastName.trim() || !ageValue || !email.trim() || !password || !confirmPassword) {
             setError("Please fill out all fields.");

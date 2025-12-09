@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./page.module.css"
 import Button from "../../../../components/Button.js";
 import SignUpModal from "../../../../components/SignUpModal";
+import LoginModal from "../../../../components/LoginModal";
 import ConfirmationModal from "../../../../components/ConfirmationModal";
 
 export default function Welcome() {
@@ -33,7 +34,7 @@ export default function Welcome() {
         />
         <div className={`${styles.authentication__buttons} ${styles['authentication__buttons--stacked']}`}>
           <Button variant="welcome" onClick={() => setModal("signup")}>Sign Up</Button>
-          <Button variant="welcome">Log In</Button>
+          <Button variant="welcome" onClick={() => setModal("login")}>Log In</Button>
         </div>
         {modal === "signup" && (
           <section className={styles.modal__overlay}>
@@ -41,6 +42,17 @@ export default function Welcome() {
               <SignUpModal
               onClose={() => setModal(null)}
               onSuccess={() => setModal("confirmation")}
+              />
+            </div>
+          </section>
+        )}
+
+        {modal === "login" && (
+          <section className={styles.modal__overlay}>
+            <div>
+              <LoginModal
+              onClose={() => setModal(null)}
+              onSuccess={() => router.push("/planet/page.js")}
               />
             </div>
           </section>
