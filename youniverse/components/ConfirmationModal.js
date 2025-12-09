@@ -17,5 +17,5 @@ export default function ConfirmationModal({onNo, onYes}){
                 </button>
             </div>
         </section>
-    )
+    );
 }

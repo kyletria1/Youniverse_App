@@ -64,5 +64,5 @@ export default function LoginModal({onClose}){
                 </div>
             </form>
         </section>
-    )
+    );
 }
