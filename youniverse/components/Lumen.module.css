@@ -1,3 +1,12 @@
+.lumen__button {
+  background-color: transparent; 
+  border: none;                  
+  cursor: pointer;              
+}
+
 .lumen__sprite{
     z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+    /*[AI Generated Code (Lines 9 and 10)]: having opacity at 1 keeps the sprite clickable and having no pointer events keeps all clicks to be passed to the button.*/
 }

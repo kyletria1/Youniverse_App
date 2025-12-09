@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Lumen() {
     return(
-        <button>
+        <button className={styles.lumen__button}>
             <Image
                 src="/lumen/Lumen.svg"
                 alt="Lumen"
