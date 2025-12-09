@@ -12,6 +12,15 @@ export default function Welcome() {
   //[from code tutor (line 11)] welcome page is mounted and router is grabbed again and now points to /onboarding/welcome_screen
   const [modal, setModal] = useState(null);
 
+  const [formData, setFormData] = useState({
+  firstName: "",
+  lastName: "",
+  age: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+  });
+
   return (
       <section className="screen">
         <Image
@@ -39,7 +48,11 @@ export default function Welcome() {
 
         {modal === "confirmation" && (
           <section className={styles.modal__overlay}>
-            <ConfirmationModal onClose={() => setModal(null)} />
+            <ConfirmationModal 
+            onClose={() => setModal(null)} 
+            onNo={() => setModal("signup")}
+            onYes={() => router.push("/planet/page.js")}
+            />
           </section>
         )}
       </section>
