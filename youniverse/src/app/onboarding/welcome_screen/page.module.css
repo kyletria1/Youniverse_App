@@ -1,7 +1,5 @@
 .welcome__image{
     z-index: 1;
-    width: 100%;
-    height: auto;
     object-fit: cover;
   }
 
