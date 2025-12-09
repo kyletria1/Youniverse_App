@@ -24,14 +24,14 @@ export default function SignUpModal({onClose, onSuccess}) {
         e.preventDefault();
         const {firstName, lastName, age, email, password, confirmPassword} = formData;
 
-        if (!firstName.trim() || !lastName.trim() || !ageValue || !email.trim() || !password || !confirmPassword) {
+        if (!firstName.trim() || !lastName.trim() || !age || !email.trim() || !password || !confirmPassword) {
             setError("Please fill out all fields.");
             return;
         }
         //[AI generated code (line 31)]: .trim() gets rid of whitespace from the start and end of a string when checking the validity of a users input.
 
-        ageValue = Number(age);
-        if (!ageValue || ageValue < 12 || ageValue > 120) {
+        const ageValue = Number(age);
+        if (!ageValue || ageValue < 13 || ageValue > 120) {
         setError("Please enter a valid age.");
         return;
         }
