@@ -131,7 +131,6 @@ export default function SignUpModal({onClose, onSuccess}) {
                     <Button variant="interface" type="submit">Sign Up</Button>
                 </div>
             </form>
-
         </section>
     );
 }

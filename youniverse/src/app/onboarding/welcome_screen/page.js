@@ -52,7 +52,7 @@ export default function Welcome() {
             <div>
               <LoginModal
               onClose={() => setModal(null)}
-              onSuccess={() => router.push("/planet/page.js")}
+              onSuccess={() => router.push("/planet")}
               />
             </div>
           </section>
@@ -63,7 +63,7 @@ export default function Welcome() {
             <ConfirmationModal 
             onClose={() => setModal(null)} 
             onNo={() => setModal("signup")}
-            onYes={() => router.push("/planet/page.js")}
+            onYes={() => router.push("/planet")}
             />
           </section>
         )}
