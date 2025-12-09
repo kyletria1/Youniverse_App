@@ -30,8 +30,8 @@ export default function SignUpModal({onClose, onSuccess}) {
         }
         //[AI generated code (line 31)]: .trim() gets rid of whitespace from the start and end of a string when checking the validity of a users input.
 
-        age = Number(age);
-        if (!age || age < 12 || age > 120) {
+        ageValue = Number(age);
+        if (!ageValue || ageValue < 12 || ageValue > 120) {
         setError("Please enter a valid age.");
         return;
         }
