@@ -21,7 +21,7 @@ const fredoka = Fredoka({
 const pixelify = Pixelify_Sans({
   subsets: ["latin"],
   weight: ["600", "500", "400"],
-  variable: "--font-pixelify",
+  variable: "--font-pixelify_sans",
 });
 
 export default function RootLayout({ children }) {
