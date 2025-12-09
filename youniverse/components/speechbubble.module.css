@@ -1,0 +1,16 @@
+.speechBubble{
+    width: 13rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #F2F9FF;
+}
+
+.motivationalmessage{
+    color: #0831B4;
+    font-family: "Pixelify Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
