@@ -13,6 +13,8 @@ html, body {
   margin: 0 auto; 
   overflow-x: hidden; 
   overflow-y: auto; 
+  padding-right: 1rem; 
+  box-sizing: content-box;
 }
 
 .screen--fullscreen {
@@ -28,4 +30,4 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #0831b4 !important;
 }
-/* [from code tutor (lines 25 to 30)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css*/
+/* [from code tutor (lines 27 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css*/
