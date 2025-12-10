@@ -1,9 +1,9 @@
 import styles from "./Lumen.module.css"
 import Image from "next/image"
 
-export default function Lumen() {
+export default function Lumen({onClick}) {
     return(
-        <button className={styles.lumen__button}>
+        <button className={styles.lumen__button} onClick={onClick}>
             <Image
                 src="/lumen/Lumen.svg"
                 alt="Lumen"
