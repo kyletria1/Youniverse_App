@@ -1,9 +1,14 @@
 .speechBubble{
     width: 13rem;
-    height: 8rem;
+    min-height: 8rem;
     border-radius: 0.5rem;
     border: 5px solid #0831B4;
     background: #F2F9FF;
+    padding: 0.5rem;          
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    text-align: center; 
 }
 
 .motivationalmessage{
@@ -13,4 +18,5 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.5rem;
+    overflow-wrap: break-word;
 }
