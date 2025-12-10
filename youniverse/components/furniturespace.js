@@ -12,4 +12,4 @@ export default function FurnitureSpace(){
                 className={styles.furniturespace__image}/>
         </button>
     );
-}
+} 
