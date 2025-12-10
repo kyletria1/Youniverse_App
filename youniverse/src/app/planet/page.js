@@ -4,6 +4,7 @@ import Image from "next/image"
 import Lumen from "../../../components/Lumen";
 import SquareButton from "../../../components/SquareButton";
 import NavigationBar from "../../../components/NavigationBar";
+import FurnitureSpace from "../../../components/FurnitureSpace";
 
 export default function Planet() {
     return(
