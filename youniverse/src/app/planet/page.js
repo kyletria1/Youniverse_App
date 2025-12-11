@@ -93,7 +93,7 @@ export default function Planet() {
         width={393}
         height={852}
         priority
-        className={styles.intro__image}
+        className={styles.planet__background}
       />
 
       <div className={styles.lumen}>
