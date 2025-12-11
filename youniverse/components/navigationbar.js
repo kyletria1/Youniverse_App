@@ -27,7 +27,7 @@ export default function NavigationBar({variant = "PlanetSelected"}) {
       AboutUs: "AboutUsIconDefault.svg",
     },
 
-    Settings: {
+    AboutUsSelected: {
       Planet: "PlanetIconDefault.svg",
       Dream: "DreamIconDefault.svg",
       Learn: "LearnIconDefault.svg",

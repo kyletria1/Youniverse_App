@@ -1,0 +1,38 @@
+.aboutUs__background {
+    width: 393px;
+    height: 852px;
+    border: 10px solid #0831B4;
+    background: #C3E2FF;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.aboutUs__heading {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aboutUs__paragraph{
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button__logOut{
+    position: relative;
+    left: 4rem;
+}
+
+.aboutUs__navigation {
+    position: absolute;
+    bottom: -1rem;
+    left: -10;
+    width: 100%;
+    z-index: 3;
+}

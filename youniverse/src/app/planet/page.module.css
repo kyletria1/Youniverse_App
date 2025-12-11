@@ -17,6 +17,7 @@
 .lumen > * {
   pointer-events: auto; 
 }
+/* AI CODE: to keep lumen clickable but not the container */
 
 .decorateButton {
   position: absolute;
