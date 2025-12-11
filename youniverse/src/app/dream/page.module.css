@@ -1,0 +1,48 @@
+.dream__background {
+    width: 393px;
+    height: 852px;
+    border: 10px solid #0831B4;
+    background: #C3E2FF;
+    overflow:hidden
+}
+
+.dream__heading {
+    display: flex;
+}
+
+.dream__title {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.dream__add {
+    position: absolute;
+    left: 19rem;
+    top: 1rem;
+}
+
+.dream__component {
+    position: absolute;
+    left: 0.4rem;
+    top: 5rem;
+}
+
+.task__component {
+    position: absolute;
+    left: 0.4rem;
+    top: 16rem;
+}
+
+.dream__navigation {
+    position: absolute;
+    bottom: -1rem;
+    left: -10;
+    width: 100%;
+    z-index: 3;
+}

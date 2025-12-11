@@ -1,0 +1,50 @@
+.dream__component {
+    width: 22rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #D6EBFF;
+}
+
+.dream__title {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.dream__edit {
+    position: absolute;
+    left: 14rem;
+    top: 1rem;
+}
+
+.dream__complete {
+    position: absolute;
+    left: 18rem;
+    top: 1rem;
+}
+
+.dream__input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #F2F9FF;
+    position: absolute;
+    top: 5rem;
+    left: 0.9rem;
+}
+
+.dream__input:focus {
+    outline: none;
+    border: 5px solid #0831B4;
+}
+
+.dream__input:hover {
+    border: 5px solid #0831B4; 
+}

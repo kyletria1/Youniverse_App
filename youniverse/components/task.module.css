@@ -1,0 +1,131 @@
+.task__component {
+    width: 22rem;
+    height: 28.5rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #D6EBFF;
+}
+
+.task__title {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.task__edit {
+    position: absolute;
+    left: 10rem;
+    top: 1rem;
+}
+
+.task__delete {
+    position: absolute;
+    left: 14rem;
+    top: 1rem;
+}
+
+.task__complete {
+    position: absolute;
+    left: 18rem;
+    top: 1rem;
+}
+
+.task__input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #F2F9FF;
+    position: absolute;
+    top: 5rem;
+    left: 0.9rem;
+    color: #072DA4;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.task__input:focus {
+    outline: none;
+    border: 5px solid #0831B4;
+}
+
+.task__input:hover {
+    border: 5px solid #0831B4; 
+}
+.step__title {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    position: absolute;
+    left: 1rem;
+    top: 11rem;
+}
+
+.step__edit {
+    position: absolute;
+    left: 10rem;
+    top: 11rem;
+}
+
+.step__delete {
+    position: absolute;
+    left: 14rem;
+    top: 11rem;
+}
+
+.step__complete {
+    position: absolute;
+    left: 18rem;
+    top: 11rem;
+}
+
+.step__input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #F2F9FF;
+    position: absolute;
+    top: 16rem;
+    left: 0.9rem;
+    color: #072DA4;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.step__input:focus {
+    outline: none;
+    border: 5px solid #0831B4;
+}
+
+.step__input:hover {
+    border: 5px solid #0831B4; 
+}
+
+.step__add {
+    width: 21rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #96BAFF;
+    color: #0831B4;
+    position: absolute;
+    left: 0.9rem;
+    top: 21rem;
+    font-family: "Poppins";
+    font-size: 3rem;
+}
