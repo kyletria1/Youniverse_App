@@ -2,32 +2,35 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden; 
+  overflow-y: auto; 
   background-color: #D6EBFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  min-height: 100vh;
 }
 
 .screen {
   position: relative;
   width: 393px;
-  height: 100vh;
-  margin: 0 auto; 
-  overflow-x: hidden; 
-  overflow-y: auto; 
-  padding-right: 1rem; 
-  box-sizing: content-box;
+  height: auto; 
+  min-height: 852px;
+  overflow: visible; 
+  padding-right: 0;
+  box-sizing: border-box;
+  margin: 2rem auto; 
 }
 
-.screen--fullscreen {
-  width: 100%;
-  height: 100vh;      
-  display: flex;
-  flex-direction: column;
+
+html {
+  -webkit-text-size-adjust: none;
 }
+/* [AI Generated Code (Lines 26 to 28)]: Prevents text from scaling */
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #0831b4 !important;
 }
-/* [from code tutor (lines 27 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css*/
+/* [from code tutor (lines 27 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css */
