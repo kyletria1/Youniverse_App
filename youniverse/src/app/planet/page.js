@@ -39,8 +39,8 @@ export default function Planet() {
 
         {showMessage && (
           <div className={styles.speechBubble}>
-            <SpeechBubble />
-          </div>
+            <SpeechBubble/>
+          </div> 
         )}
       </div>
 
