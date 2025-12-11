@@ -1,15 +1,11 @@
-import styles from "./FurnitureSpace.module.css" 
-import Image from "next/image";
+import styles from "./FurnitureSpace.module.css";
 
-export default function FurnitureSpace(){
-    return (
-        <button className={styles.furniturespace}>
-            <Image
-                src="/furniture_items/furniturespace.svg"
-                alt="Furniture Placement Space"
-                width={150}
-                height={50}
-                className={styles.furniturespace__image}/>
-        </button>
-    );
-} 
+export default function FurnitureSpace(props) {
+  const variant = props.variant || "visible";
+  const hidden = variant === "hidden";
+
+  return (
+    <button className={hidden ? styles.hidden : styles.furniturespace}>
+    </button>
+  );
+}

@@ -1,11 +1,12 @@
 .furniturespace {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: #EDFAFE;
+  border: 5px solid #7CBFFF;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
 }
 
-.furniturespace__image{
-    z-index: 2;
-    opacity: 1;
-    pointer-events: none;
-} 
+.hidden {
+  display: none;
+}
