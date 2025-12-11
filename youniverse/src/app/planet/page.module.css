@@ -1,6 +1,6 @@
-.intro__image{
-    z-index: 0;
-    object-fit: cover;
+.intro__image {
+  z-index: 0;
+  object-fit: cover;
 }
 
 .lumen {
@@ -10,7 +10,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 1;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.lumen > * {
+  pointer-events: auto; 
 }
 
 .decorateButton {
@@ -31,8 +36,45 @@
 
 .speechBubble {
   position: absolute;
-  bottom: 100%;  
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+.inventory {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 7rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.furnitureSpace__A,
+.furnitureSpace__B,
+.furnitureSpace__C {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.furnitureSpace__A {
+  top: 15rem;
+  left: 3rem;
+}
+
+.furnitureSpace__B {
+  top: 18rem;
+  left: 14rem;
+}
+
+.furnitureSpace__C {
+  top: 23rem;
+  left: 2rem;
 }

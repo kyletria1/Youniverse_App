@@ -1,7 +1,6 @@
-/* Container for the whole inventory section */
 .inventory {
-  width: 349px;
-  height: 150px;
+  width: 21.7rem;
+  height: 8rem;
   background-color: #96BAFF;
   border: 7px solid #0831B4;
   padding: 1rem;
