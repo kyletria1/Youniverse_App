@@ -1,0 +1,48 @@
+.learn__background {
+    width: 393px;
+    height: 852px;
+    border: 10px solid #0831B4;
+    background: #C3E2FF;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.learn__heading {
+    color: #0831B4;
+    font-family: "Fredoka";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.learn__intro{
+    color: #0831B4;
+    font-family: "Fredoka";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.learn__topic{
+    color: #0831B4;
+    font-family: "Fredoka";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.learn__paragraph{
+    color: #0831B4;
+    font-family: "Fredoka";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.learn__navigation {
+    position: absolute;
+    bottom: -1rem;
+    left: -10;
+    width: 100%;
+    z-index: 3;
+}
