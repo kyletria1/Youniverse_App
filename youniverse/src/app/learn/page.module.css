@@ -7,6 +7,20 @@
     padding: 0.5rem;
 }
 
+.learn__title {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 4rem;
+}
+
+.learn__card {
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;;
+}
+
 /* Productivity Articles */
 .learn__heading {
     color: #0831B4;
