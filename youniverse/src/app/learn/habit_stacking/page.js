@@ -1,52 +1,70 @@
-"use client"
-import styles from "./page.module.css"
-import NavigationBar from "../../../components/NavigationBar";
-import SquareButton from "../../../components/SquareButton";
-import Button from "../../../components/Button";
-import {useRouter} from "next/navigation";
+"use client";
+import { useState } from "react";
+import styles from "../page.module.css";
+import NavigationBar from "../../../../components/NavigationBar";
+import SquareButton from "../../../../components/SquareButton";
+import Button from "../../../../components/Button";
+import RewardModal from "../../../../components/RewardModal"; 
+import { useRouter } from "next/navigation";
 
-export default function Learn() {
+export default function HabitStackingArticle() {
   const router = useRouter();
+  const [showReward, setShowReward] = useState(false); 
+
   return (
     <section className={`screen ${styles.learn__background}`}>
-        <div className={styles.learn__back}>
-          <SquareButton
-            variant="active"
-            iconSrc="/icons/button_icons/BackIcon.svg"
-            alt="Back Button"
-            onClick={() => router.push("/learn")}/>
-        </div>
-          <h1 className={styles.learn__heading}>Stop Multitasking Chaos: Try Task Stacking</h1>
+      <div className={styles.learn__back}>
+        <SquareButton
+          variant="active"
+          iconSrc="/icons/button_icons/BackIcon.svg"
+          alt="Back Button"
+          onClick={() => router.push("/learn")}
+        />
+      </div>
+
+      <h1 className={styles.learn__heading}>
+        Build Momentum with Habit Stacking
+      </h1>
       <h2 className={styles.learn__intro}>
-        Jumping between emails, reports, and calls drains focus. Task Stacking—also called Task Batching—helps you reclaim deep work.
+        Big changes feel overwhelming. Habit Stacking makes growth easy by attaching new habits to ones you already do.
       </h2>
 
-      <h3 className={styles.learn__topic}>What Is Task Stacking?</h3>
+      <h3 className={styles.learn__topic}>What Is Habit Stacking?</h3>
       <p className={styles.learn__paragraph}>
-        It’s the practice of grouping similar tasks and tackling them in one block of time. Instead of switching gears constantly, you stay in one “mode” until the work is done.
+        It’s the practice of linking a new behavior to an existing routine. For example, “After I brush my teeth, I’ll meditate for two minutes.”
       </p>
 
       <h3 className={styles.learn__topic}>Why It Works</h3>
       <p className={styles.learn__paragraph}>
-        Every time you switch tasks, your brain has to shut down one mental program and boot up another. That lag adds up. Stacking lets you keep one program open, finish everything in that category, then move on.
+        Your brain loves patterns. By piggybacking on habits you already have, new actions become automatic faster.
       </p>
 
       <h3 className={styles.learn__topic}>How to Start</h3>
       <ul className={styles.learn__paragraph}>
-        <li><strong>Identify categories:</strong> Communication, Creation, Admin, etc.</li>
-        <li><strong>Block time:</strong> Schedule stacks like “Communication Hour” instead of individual emails.</li>
-        <li><strong>Stay disciplined:</strong> During a stack, only do that type of work. Capture other ideas for later.</li>
+        <li><strong>Identify anchor habits:</strong> Daily routines like coffee, commuting, or bedtime.</li>
+        <li><strong>Attach small actions:</strong> Add one simple step after the anchor.</li>
+        <li><strong>Repeat consistently:</strong> Let the pairing strengthen until it feels natural.</li>
       </ul>
 
       <p className={styles.learn__paragraph}>
-        Task stacking doesn’t add more work—it makes your existing work faster, and less stressful.
+        Habit stacking helps you grow steadily without relying on willpower alone.
       </p>
+
       <div className={styles.learn__done}>
-        <Button variant="interface">Done</Button>
+        <Button variant="interface" onClick={() => setShowReward(true)}>
+          Done
+        </Button>
       </div>
+
       <div className={styles.learn__navigation}>
-        <NavigationBar variant="LearnSelected"/>
+        <NavigationBar variant="LearnSelected" />
       </div>
+
+      {showReward && (
+        <div className={styles.learn__modal}>
+          <RewardModal iconSrc="/furniture_items/article/Lamp.svg" alt="Lamp"/>
+        </div>
+      )}
     </section>
   );
 }
