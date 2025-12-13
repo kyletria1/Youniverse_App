@@ -11,15 +11,16 @@
 .learn__heading {
     color: #0831B4;
     font-family: "Fredoka";
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    padding-left: 4rem;
 }
 
 .learn__intro{
     color: #0831B4;
     font-family: "Fredoka";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
 }
@@ -27,7 +28,7 @@
 .learn__topic{
     color: #0831B4;
     font-family: "Fredoka";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
 }
@@ -46,4 +47,13 @@
     left: -10;
     width: 100%;
     z-index: 3;
+}
+
+.learn__back{
+    position: absolute;
+    top: 1rem;
+}
+
+.learn__done{
+    padding-left: 5rem;
 }

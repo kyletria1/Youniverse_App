@@ -1,11 +1,22 @@
 "use client"
 import styles from "./page.module.css"
 import NavigationBar from "../../../components/NavigationBar";
+import SquareButton from "../../../components/SquareButton";
+import Button from "../../../components/Button";
+import {useRouter} from "next/navigation";
 
 export default function Learn() {
+  const router = useRouter();
   return (
     <section className={`screen ${styles.learn__background}`}>
-      <h1 className={styles.learn__heading}>Stop Multitasking Chaos: Try Task Stacking</h1>
+        <div className={styles.learn__back}>
+          <SquareButton
+            variant="active"
+            iconSrc="/icons/button_icons/BackIcon.svg"
+            alt="Back Button"
+            onClick={() => router.push("/learn")}/>
+        </div>
+          <h1 className={styles.learn__heading}>Stop Multitasking Chaos: Try Task Stacking</h1>
       <h2 className={styles.learn__intro}>
         Jumping between emails, reports, and calls drains focus. Task Stacking—also called Task Batching—helps you reclaim deep work.
       </h2>
@@ -28,9 +39,11 @@ export default function Learn() {
       </ul>
 
       <p className={styles.learn__paragraph}>
-        Task stacking doesn’t add more work—it makes your existing work smoother, faster, and less stressful.
+        Task stacking doesn’t add more work—it makes your existing work faster, and less stressful.
       </p>
-
+      <div className={styles.learn__done}>
+        <Button variant="interface">Done</Button>
+      </div>
       <div className={styles.learn__navigation}>
         <NavigationBar variant="LearnSelected"/>
       </div>
