@@ -1,31 +1,27 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-y: auto; 
+  overflow-y: visible; 
   background-color: #D6EBFF;
   display: flex;
   justify-content: center;
   align-items: center; 
-  min-height: 100vh;
 }
 
 .screen {
   position: relative;
   width: 393px;
-  height: auto; 
-  min-height: 852px;
-  overflow: visible; 
+  height: 852px; 
+  overflow: hidden;
   padding-right: 0;
   box-sizing: border-box;
   margin: 0 auto; 
 }
 
-
 html {
   -webkit-text-size-adjust: none;
 }
-/* [AI Generated Code (Lines 26 to 28)]: Prevents text from scaling */
+/* [AI Generated Code (Lines 21 to 23)]: Prevents text from scaling */
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -33,4 +29,9 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: #0831b4 !important;
 }
-/* [from code tutor (lines 27 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css */
+/* [from code tutor (lines 26 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css */
+
+.content__overflow {
+  overflow-y: auto;           
+  max-height: 100%; 
+}
