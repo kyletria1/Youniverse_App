@@ -12,7 +12,7 @@ html, body {
   position: relative;
   width: 393px;
   height: 852px; 
-  overflow: hidden;
+  overflow: auto;
   padding-right: 0;
   box-sizing: border-box;
   margin: 0 auto; 
@@ -30,8 +30,3 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #0831b4 !important;
 }
 /* [from code tutor (lines 26 to 31)]: edit webkit-autofill to change the browser default styling of the autofill to match the styling of globals.css */
-
-.content__overflow {
-  overflow-y: auto;           
-  max-height: 100%; 
-}
