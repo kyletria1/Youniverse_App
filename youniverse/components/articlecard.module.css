@@ -1,0 +1,16 @@
+.card{
+    width: 20rem;
+    height: 9rem;
+    border: 5px solid #0831B4;
+    background: #D6EBFF;
+    border-radius: 0.5;
+}
+
+.text{
+    color: #0831B4;
+    font-family: "Fredoka";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+}
