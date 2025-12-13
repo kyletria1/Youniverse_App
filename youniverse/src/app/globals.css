@@ -12,7 +12,7 @@ html, body {
   position: relative;
   width: 393px;
   height: 852px; 
-  overflow: auto;
+  overflow: hidden;
   padding-right: 0;
   box-sizing: border-box;
   margin: 0 auto; 
