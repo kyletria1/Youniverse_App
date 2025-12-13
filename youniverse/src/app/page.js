@@ -1,7 +1,33 @@
-import {redirect} from "next/navigation";
-//[from code tutor (line 1)]: tells next.js to not render this page but send user to another route
+"use client";
+import {useEffect} from "react";
+import {useRouter} from "next/navigation";
+import Image from "next/image";
+import styles from "./page.module.css";
 
-export default function Home() {
-  redirect("/onboarding/intro");
-  //[from code tutor (line 6)]: instead of rendering this page the function send the user to the route of the intro page
+export default function Intro() {
+  const router = useRouter();
+  //[from code tutor (lines 7 and 8)]: gives access to the router object
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push("/welcome"); 
+    }, 5000);
+    //[from code tutor (lines 11 to 14)]: schedules function to route to the welcome screen after a 5 second delay
+
+    return () => clearTimeout(timer);
+  }, [router]);
+  //[from code tutor (lines 17 and 18)]: function to prevent errors if component unmounts (gets removed from DOM tree) before 5 seconds are up
+
+  return (
+    <section className="screen">
+      <Image 
+      src="/background_images/StarUpSpaceIntroBackground.svg" 
+      alt="StarUpSpace Company Wordmark Introduction Screen" 
+      width={393}
+      height={852}
+      priority
+      className={`${styles.intro__image}`}>
+      </Image>
+    </section>
+  );
 }

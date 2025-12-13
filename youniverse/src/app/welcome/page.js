@@ -3,10 +3,10 @@ import {useState} from "react";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css"
-import Button from "../../../../components/Button.js";
-import SignUpModal from "../../../../components/SignUpModal";
-import LoginModal from "../../../../components/LoginModal";
-import ConfirmationModal from "../../../../components/ConfirmationModal";
+import Button from "../../../components/Button.js";
+import SignUpModal from "../../../components/SignUpModal";
+import LoginModal from "../../../components/LoginModal";
+import ConfirmationModal from "../../../components/ConfirmationModal";
 
 export default function Welcome() {
   const router = useRouter();
