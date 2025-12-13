@@ -1,22 +1,30 @@
-"use client"
-import styles from "../page.module.css"
+"use client";
+import { useState } from "react";
+import styles from "../page.module.css";
 import NavigationBar from "../../../../components/NavigationBar";
 import SquareButton from "../../../../components/SquareButton";
 import Button from "../../../../components/Button";
-import {useRouter} from "next/navigation";
+import RewardModal from "../../../../components/RewardModal";   // import your modal
+import { useRouter } from "next/navigation";
 
 export default function TaskStackingArticle() {
   const router = useRouter();
+  const [showReward, setShowReward] = useState(false); // state for modal
+
   return (
     <section className={`screen ${styles.learn__background}`}>
-        <div className={styles.learn__back}>
-          <SquareButton
-            variant="active"
-            iconSrc="/icons/button_icons/BackIcon.svg"
-            alt="Back Button"
-            onClick={() => router.push("/learn")}/>
-        </div>
-          <h1 className={styles.learn__heading}>Stop Multitasking Chaos: Try Task Stacking</h1>
+      <div className={styles.learn__back}>
+        <SquareButton
+          variant="active"
+          iconSrc="/icons/button_icons/BackIcon.svg"
+          alt="Back Button"
+          onClick={() => router.push("/learn")}
+        />
+      </div>
+
+      <h1 className={styles.learn__heading}>
+        Stop Multitasking Chaos: Try Task Stacking
+      </h1>
       <h2 className={styles.learn__intro}>
         Jumping between emails, reports, and calls drains focus. Task Stacking—also called Task Batching—helps you reclaim deep work.
       </h2>
@@ -39,14 +47,24 @@ export default function TaskStackingArticle() {
       </ul>
 
       <p className={styles.learn__paragraph}>
-        Task stacking doesn’t add more work—it makes your existing work faster, and less stressful.
+        Task stacking doesn’t add more work, it makes your existing work faster, and less stressful.
       </p>
+
       <div className={styles.learn__done}>
-        <Button variant="interface">Done</Button>
+        <Button variant="interface" onClick={() => setShowReward(true)}>
+          Done
+        </Button>
       </div>
+
       <div className={styles.learn__navigation}>
-        <NavigationBar variant="LearnSelected"/>
+        <NavigationBar variant="LearnSelected" />
       </div>
+
+      {showReward && (
+        <div className={styles.learn__modal}>
+          <RewardModal iconSrc="/furniture_items/article/GiantStackOfBooks.svg" alt="Giant Stack of Books"/>
+        </div>
+      )}
     </section>
   );
 }

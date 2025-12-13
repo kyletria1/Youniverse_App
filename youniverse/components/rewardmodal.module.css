@@ -1,0 +1,35 @@
+.modal {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    border: 5px solid #0831B4;
+    background: #F9FDFF;
+}
+
+.modal__heading {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+.modal__text {
+    color: #0831B4;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    padding-left: 2rem;
+}
+
+.modal__reward {
+    padding-left: 7rem;
+}
+
+.modal__button {
+    padding-left: 3.5rem;
+}
